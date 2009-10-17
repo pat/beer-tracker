@@ -1,0 +1,10 @@
+h1. Beer Totaller
+h2. How many bottles of beer on the wall?
+
+Beer Totaller tracks thanks (in the form of beers), as queued up by the Numbr5 Bot in IRC.
+
+h2. Copyright
+
+Copyright (c) 2009 Pat Allan, and released under an MIT License. Inspired by Lachie Cox's "faces.rubyonrails.com.au":http://faces.rubyonrails.com.au, and initially built at Rails Camp UK 2, October 2009.
+
+This is not a unique idea. There are other very similar implementations. But I wanted to write it... if it gets used, that's just a bonus.
