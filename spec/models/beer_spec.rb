@@ -11,6 +11,12 @@ describe Beer do
       beer = Beer.make_unsaved :to => nil
       beer.should have(1).error_on(:to)
     end
+    
+    it "should not allow a user to thank themselves" do
+      user = User.make
+      beer = Beer.make_unsaved :from => user, :to => user
+      beer.should have(1).error_on(:to)
+    end
   end
   
   describe '#from=' do

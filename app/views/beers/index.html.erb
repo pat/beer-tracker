@@ -1,0 +1,10 @@
+<h2>Beers</h2>
+
+<ul>
+<%- @beers.each do |beer| -%>
+  <li>
+    <%= link_to beer.from.name, beer.from %> owes <%= link_to beer.to.name, beer.to %>
+    a beer <%= beer.reason %>
+  </li>
+<%- end -%>
+</ul>

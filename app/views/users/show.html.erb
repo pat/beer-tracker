@@ -1,0 +1,28 @@
+<h2><%= @user.name %></h2>
+
+<h3>Stats</h3>
+
+<dl>
+  <dt>Beers Owing</dt>
+  <dd><%= @user.beers_owing.count %></dd>
+  <dt>Beers Owed</dt>
+  <dd><%= @user.beers_owed.count %></dd>
+  <dt>Net Beers</dt>
+  <dd><%= @user.beers_owed.count - @user.beers_owing.count %></dd>
+</dl>
+
+<h3>Beers Owing</h3>
+
+<ul>
+  <%- @user.beers_owing.each do |beer| -%>
+    <li>Owes a beer to <%= link_to_user beer.to %> <%= beer.reason %></li>
+  <%- end -%>
+</ul>
+
+<h3>Beers Owed</h3>
+
+<ul>
+  <%- @user.beers_owed.each do |beer| -%>
+    <li>Owed a beer by <%= link_to_user beer.from %> <%= beer.reason %></li>
+  <%- end -%>
+</ul>

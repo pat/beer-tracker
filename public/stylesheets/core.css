@@ -1,0 +1,62 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  border-left: 2px solid #666;
+  border-right: 2px solid #666;
+}
+
+h1 {
+  text-align: center;
+  background-color: #994D65;
+  color: #fff;
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+
+h1 a {
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+
+dt {
+  float: left;
+  line-height: 1.5;
+}
+
+dt:after {
+  content: ':';
+}
+
+dd {
+  margin-left: 7em;
+  line-height: 1.5;
+}
+
+ul, ol {
+  margin: 1.5em 0;
+}
+
+li {
+  margin-left: 1.5em;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+#content {
+  margin: 1.5em;
+}
